@@ -72,3 +72,33 @@ Más adelante veremos que esta característica le permite acoplarse perfectament
 
 Es posible para nosotros crear nuestras propias interfaces funcionales, sin embargo, la versión 8 de Java ha incluido una gran cantidad de estas interfaces dentro del paquete
 `java.util.function`
+
+
+````Java
+package functionalprogramming;
+
+/**
+ * FunctionalInterface : esta definida en el pkg java.lang, cuando se agrega esta etiqueta
+ * puede dar error si no se cumple con los criterios de una interfaz funcional
+ * @author leoz3
+ * @param <T> 
+ */
+
+@FunctionalInterface
+public interface Comparator<T> {
+    
+    int compare(T o1, T o2 );
+    
+    boolean equal( Object obj );
+    
+}
+````
+
+### Otra def de interface funcional
+
+una interce funcional define objetos que no guardan valores como los objetos tradicionales sino que sirve para guardar funciones.
+
+
+
+[java.util.function](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html)
+[Interface function<T,R>(https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html)
